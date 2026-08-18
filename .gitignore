@@ -1,0 +1,14 @@
+# Raw datasets are not redistributed
+data/raw/
+
+# Generated outputs and model binaries
+results/generated/*
+!results/generated/.gitkeep
+*.joblib
+
+# Python / OS
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+venv/
