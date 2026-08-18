@@ -1,0 +1,10 @@
+Dataset,Model,Accuracy,Precision,Recall,F1-score,Training Time (s),Inference Time (s),Memory Usage (MB),Test Samples,Throughput (samples/s),Model Size (MB),Notes
+UNSW-NB15,Random Forest,0.9047,0.9877,0.8708,0.9256,2.36,0.58,243.94,175341,302312.07,,Archived paper value from the original CRC baseline run; wall-clock resource values are platform-specific.
+UNSW-NB15,SVM,0.6611,0.8111,0.6545,0.7245,377.63,2654.72,677.53,175341,66.05,,Archived paper value from the original CRC baseline run; wall-clock resource values are platform-specific.
+UNSW-NB15,MLP,0.7364,0.9706,0.6318,0.7654,6.35,0.32,192.34,175341,547940.62,,Archived paper value from the original CRC baseline run; wall-clock resource values are platform-specific.
+UNSW-NB15,Logistic Regression,0.7427,0.9551,0.6527,0.7754,0.81,0.3,456.19,175341,584470.0,,Archived paper value from the original CRC baseline run; wall-clock resource values are platform-specific.
+ToN_IoT,Random Forest,0.9991,0.9991,0.9998,0.9994,5.849,0.0974,372.375,42209,433357.29,8.4689,Archived paper value; ToN_IoT memory is peak RSS increase across fit+predict; resource values are platform-specific.
+ToN_IoT,Logistic Regression,0.7701,0.8039,0.9242,0.8599,33.3999,0.2276,550.8125,42209,185452.55,0.0459,Archived paper value; ToN_IoT memory is peak RSS increase across fit+predict; resource values are platform-specific.
+ToN_IoT,MLP,0.9785,0.9925,0.9792,0.9858,631.0619,0.1373,930.2344,42209,307421.7,1.9501,Archived paper value; ToN_IoT memory is peak RSS increase across fit+predict; resource values are platform-specific.
+ToN_IoT,Decision Tree,0.9989,0.9995,0.999,0.9993,3.3186,0.0506,713.9062,42209,834169.96,0.0811,Archived paper value; ToN_IoT memory is peak RSS increase across fit+predict; resource values are platform-specific.
+ToN_IoT,Naive Bayes,0.2386,0.9733,0.0023,0.0045,3.5865,0.2254,1178.3125,42209,187262.64,0.0681,Archived paper value; ToN_IoT memory is peak RSS increase across fit+predict; resource values are platform-specific.

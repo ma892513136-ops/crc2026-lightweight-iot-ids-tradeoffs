@@ -1,0 +1,67 @@
+{
+  "purpose": "CRC 2026 major revision — ToN_IoT repeated-refit consistency",
+  "input_file": "data/raw/ton_iot/train_test_network.csv",
+  "requested_seeds": [
+    42,
+    43,
+    44
+  ],
+  "requested_models": [
+    "Random Forest",
+    "Logistic Regression",
+    "Decision Tree",
+    "Naive Bayes"
+  ],
+  "preprocessing": {
+    "rows": 211043,
+    "columns": 44,
+    "removed_columns": [
+      "label",
+      "type",
+      "src_ip",
+      "dst_ip"
+    ],
+    "categorical_columns": [
+      "proto",
+      "service",
+      "conn_state",
+      "dns_query",
+      "dns_AA",
+      "dns_RD",
+      "dns_RA",
+      "dns_rejected",
+      "ssl_version",
+      "ssl_cipher",
+      "ssl_resumed",
+      "ssl_established",
+      "ssl_subject",
+      "ssl_issuer",
+      "http_trans_depth",
+      "http_method",
+      "http_uri",
+      "http_version",
+      "http_user_agent",
+      "http_orig_mime_types",
+      "http_resp_mime_types",
+      "weird_name",
+      "weird_addl",
+      "weird_notice"
+    ],
+    "encoded_feature_dimension": 973,
+    "encoding_policy": "pandas.get_dummies before split; no float32 coercion"
+  },
+  "split_policy": "80:20 stratified split repeated independently for each seed",
+  "checkpoint_policy": "atomic raw checkpoint after every completed seed/model",
+  "resume_policy": "completed seed/model pairs skipped",
+  "interruption_policy": "sklearn 'Training interrupted by user' results are rejected",
+  "statistical_boundary": "descriptive mean/std only; no inferential significance claim",
+  "resource_boundary": "timings diagnostic only; frozen CRC resource values remain authoritative",
+  "environment": {
+    "python": "3.13.3 (v3.13.3:6280bb54784, Apr  8 2025, 10:47:54) [Clang 15.0.0 (clang-1500.3.9.4)]",
+    "platform": "macOS-14.5-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0"
+  }
+}

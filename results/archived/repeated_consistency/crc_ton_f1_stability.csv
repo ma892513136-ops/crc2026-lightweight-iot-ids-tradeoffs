@@ -1,0 +1,5 @@
+Current Mean-F1 Rank,Model,Completed Seeds,F1 Mean,F1 Std,F1 Min,F1 Max,F1 Range
+1,Random Forest,3,0.99954,8.8e-05,0.999441,0.999612,0.000171
+2,Decision Tree,3,0.999358,7e-05,0.999286,0.999426,0.00014
+3,Logistic Regression,3,0.86018,0.011548,0.848796,0.871885,0.023089
+4,Naive Bayes,3,0.003078,0.001275,0.002108,0.004522,0.002414
